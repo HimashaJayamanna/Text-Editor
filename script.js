@@ -13,6 +13,19 @@ function italic() {
     document.execCommand('italic', false, null);
 }
 
+// Function to change font color
+function openColorPicker() {
+    const colorPicker = document.getElementById('colorPicker');
+    colorPicker.click(); // Simulate a click on the hidden color picker
+}
+
+// Listen for the change event on the color picker
+const colorPicker = document.getElementById('colorPicker');
+colorPicker.addEventListener('input', function() {
+    const color = colorPicker.value;
+    document.execCommand('foreColor', false, color);
+});
+
 
 //Function for placeholder
 const content = document.getElementById('content');

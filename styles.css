@@ -79,6 +79,25 @@ button{
     height: 100%;
     }
 
+#fontColorButton img{
+    width: 22px;
+    height:22px ;
+}
+
+#colorPicker{
+    display:none;
+
+}
+
+button:hover{
+    background: grey;
+}
+
+button:focus{
+    background: #1f5f89;
+    color:grey;
+}
+
 
 #content{
     width: 875px;
