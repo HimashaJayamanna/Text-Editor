@@ -3,6 +3,10 @@ function bold() {
     document.execCommand('bold', false, null);
 }
 
+// Function to underline selected text
+function underline() {
+    document.execCommand('underline', false, null);
+}
 
 //Function for placeholder
 const content = document.getElementById('content');
