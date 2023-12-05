@@ -74,6 +74,11 @@ button{
     height: 25px;
     }
 
+#italicButton img{
+    width: 100%;
+    height: 100%;
+    }
+
 
 #content{
     width: 875px;

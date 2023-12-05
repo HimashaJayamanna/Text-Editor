@@ -8,6 +8,12 @@ function underline() {
     document.execCommand('underline', false, null);
 }
 
+// Function to make selected text italic
+function italic() {
+    document.execCommand('italic', false, null);
+}
+
+
 //Function for placeholder
 const content = document.getElementById('content');
 const placeholder = content.querySelector('.placeholder');
