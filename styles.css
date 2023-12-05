@@ -69,6 +69,11 @@ button{
     height: 100%;
     }
 
+#underlineButton img{
+    width:22px;
+    height: 25px;
+    }
+
 
 #content{
     width: 875px;
