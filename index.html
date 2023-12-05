@@ -5,9 +5,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Text Editor - [CT/2019/043]</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,8 +13,23 @@
     <h1>Text Editor</h1>
     <hr>
     <br>
-    
-    
+    <div class="container">
+        <div class="row">
+            <div class="col" id="format">
+                <div class="first box">
+                    <button type="button" id="boldButton" onclick="bold(this)">
+                    <img src="Resources/bold-xxl.png" alt="Bold Icon">
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="col" id="content" contenteditable="true" spellcheck="false">     <!--Create content editable area-->
+                <div class="placeholder">Start typing here...</div>
+            </div>
+        </div>
+        
+    </div>
+        
 
     <br>          
     <footer>
