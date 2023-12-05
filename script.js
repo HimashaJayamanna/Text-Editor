@@ -43,6 +43,14 @@ function justify(){
     document.execCommand("justifyFull",false,null);
 }
 
+// Functions for undo and redo
+function undo() {
+    document.execCommand('undo', false, null);
+}
+
+function redo() {
+    document.execCommand('redo', false, null);
+}
 
 //Function for placeholder
 const content = document.getElementById('content');
