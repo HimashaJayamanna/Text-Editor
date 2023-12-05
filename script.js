@@ -26,6 +26,23 @@ colorPicker.addEventListener('input', function() {
     document.execCommand('foreColor', false, color);
 });
 
+// Functions to align text
+function left() {
+    document.execCommand('justifyLeft', false, null);
+}
+
+function center() {
+    document.execCommand('justifyCenter', false, null);
+}
+
+function right() {
+    document.execCommand('justifyRight', false, null);
+}
+
+function justify(){
+    document.execCommand("justifyFull",false,null);
+}
+
 
 //Function for placeholder
 const content = document.getElementById('content');
