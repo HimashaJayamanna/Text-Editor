@@ -64,3 +64,14 @@ content.addEventListener('input', function() {
         placeholder.style.display = 'block';
     }
 });
+
+// Function to adjust the height of the content area based on its content
+function adjustHeight() {
+    const minHeight= 400;
+    content.style.height = 'auto';
+    content.style.height =Math.max (minHeight,content.scrollHeight) + 'px';
+}
+
+content.addEventListener('input', adjustHeight);
+
+adjustHeight();
